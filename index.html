@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MeetSpace - Book Your Perfect Meeting Room</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary-dark: #101728;
+        --primary-purple: #260e69;
+      }
+      body {
+        background: linear-gradient(
+          135deg,
+          var(--primary-dark) 0%,
+          var(--primary-purple) 100%
+        );
+        color: #ffffff;
+      }
+      .gradient-btn {
+        background: linear-gradient(90deg, #260e69 0%, #101728 100%);
+        transition: all 0.3s ease;
+      }
+      .gradient-btn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 15px rgba(38, 14, 105, 0.4);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen">
+    <!-- Navigation -->
+    <nav class="px-6 py-4">
+      <div class="container mx-auto flex justify-between items-center">
+        <div class="text-2xl font-bold">MeetSpace</div>
+        <div class="space-x-6">
+          <a href="#" class="hover:text-purple-300">Home</a>
+          <a href="#" class="hover:text-purple-300">Rooms</a>
+          <a href="#" class="hover:text-purple-300">Pricing</a>
+          <a href="#" class="hover:text-purple-300">Contact</a>
+          <a href="#" class="gradient-btn px-6 py-2 rounded-full font-semibold"
+            >Book Now</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="container mx-auto px-6 py-16">
+      <div class="flex flex-col md:flex-row items-center">
+        <div class="md:w-1/2 mb-10 md:mb-0">
+          <h1 class="text-5xl font-bold mb-6">
+            Book Your Perfect Meeting Space
+          </h1>
+          <p class="text-lg m-8 text-gray-300">
+            Professional meeting rooms designed for productivity and
+            collaboration. Book instantly, meet confidently.
+          </p>
+          <div class="space-x-4">
+            <button class="gradient-btn px-8 py-3 rounded-full font-semibold">
+              Get Started
+            </button>
+            <button
+              class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-gray-900 transition"
+            >
+              Learn More
+            </button>
+          </div>
+        </div>
+        <div class="md:w-1/2">
+          <img
+            src="salleConf.jpg"
+            alt="Modern Meeting Room"
+            class="rounded-lg shadow-2xl"
+          />
+        </div>
+      </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Why Choose MeetSpace?
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="text-center p-6 rounded-lg bg-opacity-10 bg-white">
+          <div class="text-4xl mb-4">🎯</div>
+          <h3 class="text-xl font-semibold mb-3">Instant Booking</h3>
+          <p class="text-gray-300">
+            Book your meeting room in seconds with our easy-to-use platform
+          </p>
+        </div>
+        <div class="text-center p-6 rounded-lg bg-opacity-10 bg-white">
+          <div class="text-4xl mb-4">💼</div>
+          <h3 class="text-xl font-semibold mb-3">Professional Spaces</h3>
+          <p class="text-gray-300">
+            Modern facilities equipped with the latest technology
+          </p>
+        </div>
+        <div class="text-center p-6 rounded-lg bg-opacity-10 bg-white">
+          <div class="text-4xl mb-4">🌟</div>
+          <h3 class="text-xl font-semibold mb-3">24/7 Support</h3>
+          <p class="text-gray-300">
+            Round-the-clock assistance for all your needs
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Explore Our Meeting Spaces
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Gallery Item 1 -->
+        <div class="group relative overflow-hidden rounded-xl cursor-pointer">
+          <img
+            src="https://images.unsplash.com/photo-1497366216548-37526070297c"
+            alt="Executive Meeting Room"
+            class="w-full h-80 object-cover transform transition-transform duration-500 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <div class="absolute bottom-0 p-6">
+              <h3 class="text-xl font-bold mb-2">Executive Suite</h3>
+              <p class="text-gray-300">Elegant space for high-level meetings</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 2 -->
+        <div class="group relative overflow-hidden rounded-xl cursor-pointer">
+          <img
+            src="https://images.unsplash.com/photo-1431540015161-0bf868a2d407"
+            alt="Conference Room"
+            class="w-full h-80 object-cover transform transition-transform duration-500 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <div class="absolute bottom-0 p-6">
+              <h3 class="text-xl font-bold mb-2">Conference Hall</h3>
+              <p class="text-gray-300"> Perfect for large gatherings</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Gallery Item 3 -->
+        <div class="group relative overflow-hidden rounded-xl cursor-pointer">
+          <img
+            src="https://images.unsplash.com/photo-1462826303086-329426d1aef5"
+            alt="Collaborative Space"
+            class="w-full h-80 object-cover transform transition-transform duration-500 group-hover:scale-110"
+          />
+          <div
+            class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+          >
+            <div class="absolute bottom-0 p-6">
+              <h3 class="text-xl font-bold mb-2">Creative Hub</h3>
+              <p class="text-gray-300">
+                Inspiring space for team collaboration
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Simple, Transparent Pricing
+      </h2>
+
+      <!-- Booking Options -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-16">
+        <div
+          class="bg-white bg-opacity-5 p-6 rounded-lg text-center hover:transform hover:scale-105 transition duration-300"
+        >
+          <h3 class="text-xl font-semibold mb-4">Hourly</h3>
+          <p class="text-3xl font-bold mb-4">
+            $30<span class="text-sm">/hour</span>
+          </p>
+          <p class="text-gray-300 mb-4">For quick meetings</p>
+          <button class="gradient-btn w-full px-6 py-2 rounded-full">
+            Book Now
+          </button>
+        </div>
+        <div
+          class="bg-white bg-opacity-5 p-6 rounded-lg text-center hover:transform hover:scale-105 transition duration-300"
+        >
+          <h3 class="text-xl font-semibold mb-4">Half-Day</h3>
+          <p class="text-3xl font-bold mb-4">
+            $120<span class="text-sm">/4hrs</span>
+          </p>
+          <p class="text-gray-300 mb-4">Ideal for workshops</p>
+          <button class="gradient-btn w-full px-6 py-2 rounded-full">
+            Book Now
+          </button>
+        </div>
+        <div
+          class="bg-white bg-opacity-5 p-6 rounded-lg text-center hover:transform hover:scale-105 transition duration-300"
+        >
+          <h3 class="text-xl font-semibold mb-4">Full-Day</h3>
+          <p class="text-3xl font-bold mb-4">
+            $200<span class="text-sm">/day</span>
+          </p>
+          <p class="text-gray-300 mb-4">Best for conferences</p>
+          <button class="gradient-btn w-full px-6 py-2 rounded-full">
+            Book Now
+          </button>
+        </div>
+        <div
+          class="bg-white bg-opacity-5 p-6 rounded-lg text-center hover:transform hover:scale-105 transition duration-300"
+        >
+          <h3 class="text-xl font-semibold mb-4">Monthly</h3>
+          <p class="text-3xl font-bold mb-4">
+            $3000<span class="text-sm">/month</span>
+          </p>
+          <p class="text-gray-300 mb-4">For regular bookings</p>
+          <button class="gradient-btn w-full px-6 py-2 rounded-full">
+            Book Now
+          </button>
+        </div>
+      </div>
+
+      <!-- Room Categories -->
+      <h3 class="text-2xl font-bold mb-8">Room Categories</h3>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div class="bg-white bg-opacity-5 p-6 rounded-lg">
+          <h4 class="text-xl font-semibold mb-4">Standard Room</h4>
+          <ul class="space-y-2 text-gray-300 mb-6">
+            <li>✓ Up to 4 people</li>
+            <li>✓ Basic AV equipment</li>
+            <li>✓ Whiteboard</li>
+            <li>✓ Wi-Fi</li>
+          </ul>
+          <p class="text-xl font-bold">From $30/hour</p>
+        </div>
+        <div class="bg-white bg-opacity-5 p-6 rounded-lg">
+          <h4 class="text-xl font-semibold mb-4">Executive Room</h4>
+          <ul class="space-y-2 text-gray-300 mb-6">
+            <li>✓ Up to 8 people</li>
+            <li>✓ Advanced AV system</li>
+            <li>✓ Smart board</li>
+            <li>✓ Premium furniture</li>
+          </ul>
+          <p class="text-xl font-bold">From $50/hour</p>
+        </div>
+        <div class="bg-white bg-opacity-5 p-6 rounded-lg">
+          <h4 class="text-xl font-semibold mb-4">Conference Room</h4>
+          <ul class="space-y-2 text-gray-300 mb-6">
+            <li>✓ Up to 20 people</li>
+            <li>✓ Full AV suite</li>
+            <li>✓ Video conferencing</li>
+            <li>✓ Catering available</li>
+          </ul>
+          <p class="text-xl font-bold">From $80/hour</p>
+        </div>
+      </div>
+
+      <!-- Additional Services -->
+      <h3 class="text-2xl font-bold mb-8">Additional Services</h3>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl">☕</span>
+          <div>
+            <h4 class="font-semibold">Catering</h4>
+            <p class="text-gray-300">From $15/person</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl">🎥</span>
+          <div>
+            <h4 class="font-semibold">Recording</h4>
+            <p class="text-gray-300">$50/session</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl">👤</span>
+          <div>
+            <h4 class="font-semibold">IT Support</h4>
+            <p class="text-gray-300">$40/hour</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-4">
+          <span class="text-2xl">🖨️</span>
+          <div>
+            <h4 class="font-semibold">Print Service</h4>
+            <p class="text-gray-300">$0.10/page</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container mx-auto px-6 py-16">
+      <h2 class="text-3xl font-bold text-center mb-12">
+        Frequently Asked Questions
+      </h2>
+      <div class="max-w-3xl mx-auto space-y-6">
+        <div class="bg-white bg-opacity-5 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            How do I book a meeting room?
+          </h3>
+          <p class="text-gray-300">
+            Simply click the "Book Now" button, select your preferred room type,
+            date, and time, and complete the booking process. You'll receive an
+            instant confirmation email.
+          </p>
+        </div>
+
+        <div class="bg-white bg-opacity-5 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            What's your cancellation policy?
+          </h3>
+          <p class="text-gray-300">
+            Free cancellation up to 24 hours before your booking. Cancellations
+            within 24 hours may be subject to a fee.
+          </p>
+        </div>
+
+        <div class="bg-white bg-opacity-5 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            Do you offer discounts for regular bookings?
+          </h3>
+          <p class="text-gray-300">
+            Yes! We offer special rates for monthly bookings and corporate
+            accounts. Contact our sales team for more information.
+          </p>
+        </div>
+
+        <div class="bg-white bg-opacity-5 p-6 rounded-lg">
+          <h3 class="text-xl font-semibold mb-3">
+            What amenities are included?
+          </h3>
+          <p class="text-gray-300">
+            All rooms include high-speed Wi-Fi, basic AV equipment, and booking.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="container mx-auto px-6 py-16">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold mb-6">
+          Ready to Book Your Meeting Room?
+        </h2>
+        <p class="text-lg mb-8 text-gray-300">
+          Join thousands of satisfied professionals who trust MeetSpace
+        </p>
+        <button class="gradient-btn px-8 py-3 rounded-full font-semibold">
+          Book Now
+        </button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="border-t border-gray-800">
+      <div class="container mx-auto px-6 py-8">
+        <div class="flex flex-col md:flex-row justify-between">
+          <div class="mb-6 md:mb-0">
+            <div class="text-2xl font-bold mb-4">MeetSpace</div>
+            <p class="text-gray-400">Making meetings better, together.</p>
+          </div>
+          <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Company</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li><a href="#" class="hover:text-white">About</a></li>
+                <li><a href="#" class="hover:text-white">Careers</a></li>
+                <li><a href="#" class="hover:text-white">Contact</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Resources</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li><a href="#" class="hover:text-white">Blog</a></li>
+                <li><a href="#" class="hover:text-white">Help Center</a></li>
+                <li><a href="#" class="hover:text-white">FAQ</a></li>
+              </ul>
+            </div>
+            <div>
+              <h4 class="text-lg font-semibold mb-4">Legal</h4>
+              <ul class="space-y-2 text-gray-400">
+                <li><a href="#" class="hover:text-white">Privacy</a></li>
+                <li><a href="#" class="hover:text-white">Terms</a></li>
+                <li><a href="#" class="hover:text-white">Security</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mt-8 pt-8 border-t border-gray-800 text-center text-gray-400"
+        >
+          <p>&copy; 2024 MeetSpace. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
